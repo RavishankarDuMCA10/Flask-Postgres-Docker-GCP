@@ -6,6 +6,7 @@ spec:
   selector:
     app: flask-db
   ports:
-    - port: 5432
+    - protocol: TCP
+      port: 5432
       targetPort: 5432
-  clusterIP: None
+  type: ClusterIP  # ✅ This ensures DNS gets registered

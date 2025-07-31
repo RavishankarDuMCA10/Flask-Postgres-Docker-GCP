@@ -14,12 +14,9 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: ravishankarkushwaha13/flask_live_app:1.0.0
+          image: ravishankarkushwaha13/flask_live_app:1.0.1
           ports:
             - containerPort: 4000
-          env:
-            - name: DB_URL
-              value: postgresql://$(DB_USER):$(DB_PASSWORD)@$(DB_HOST):$(DB_PORT)/$(DB_NAME)
           envFrom:
             - configMapRef:
                 name: flask-config
