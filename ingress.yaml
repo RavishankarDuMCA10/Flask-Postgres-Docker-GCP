@@ -3,16 +3,15 @@ kind: Ingress
 metadata:
   name: flask-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "gce"  # Required for GKE Ingress controller
 spec:
   rules:
-    - host: flaskapp.example.com
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: flask-app
+                name: flask-app    # Your service name
                 port:
-                  number: 80
+                  number: 4000     # The port exposed by your flask-app service
