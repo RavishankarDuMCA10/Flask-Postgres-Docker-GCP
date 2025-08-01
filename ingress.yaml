@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: flask-ingress
   annotations:
-    kubernetes.io/ingress.class: "gce"  # Required for GKE Ingress controller
+    kubernetes.io/ingress.class: "gce"  
 spec:
   rules:
     - http:
@@ -12,6 +12,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: flask-app    # Your service name
+                name: flask-app    
                 port:
-                  number: 4000     # The port exposed by your flask-app service
+                  number: 4000     
