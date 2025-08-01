@@ -3,7 +3,7 @@
 
 ## 🔗 Quick Links
 
-- 📂 **Source Code Repository**: [GitHub Repo]([https://github.com/your-username/k8s-flask-postgres-app](https://github.com/RavishankarDuMCA10/Flask-Postgres-Docker-GCP.git))
+- 📂 **Source Code Repository**: [GitHub Repo]([https://github.com/your-username/k8s-flask-postgres-app])
 - 🐋 **Docker Image**: [`ravishankarkushwaha13/flask_live_app:1.0.2`](https://hub.docker.com/repository/docker/ravishankarkushwaha13/flask_live_app)
 - 🌐 **Live API Endpoint**: [`http://34.54.174.188/users`](http://34.54.174.188/users)
 
@@ -157,15 +157,6 @@ kubectl delete pod <flask-db-pod>
 | **Ingress**      | Clean external exposure with URL routing.                  |
 | **Secrets**      | Keeps credentials secure and out of version control.       |
 | **ConfigMap**    | Externalizes DB config without hardcoding in app.          |
-
----
-
-## 📎 Screenshots / Recording Checklist
-
-✅ Show `kubectl get all` with all components deployed  
-✅ Show API call: `curl http://34.54.174.188/users` fetching records  
-✅ Delete Flask pod, show regeneration  
-✅ Delete DB pod, show persistent data  
 
 ---
 
