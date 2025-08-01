@@ -174,3 +174,12 @@ Contains `Flask`, `psycopg2`, and `app.py` to connect with PostgreSQL.
 |--------|----------------------|--------------------------|
 | `GET`  | `/users`             | Fetch all users          |
 | `POST` | `/users`             | Add a new user           |
+
+---
+## 🐋 Docker Build & Push Instructions
+
+To build and push the Docker image for the Flask API to Docker Hub, use the following command:
+
+```bash
+docker buildx build --platform linux/amd64 -t ravishankarkushwaha13/flask_live_app:1.0.1 --push .
+```
