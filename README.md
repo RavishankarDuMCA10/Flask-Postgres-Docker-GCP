@@ -3,7 +3,7 @@
 
 ## 🔗 Quick Links
 
-- 📂 **Source Code Repository**: [GitHub Repo]([https://github.com/your-username/k8s-flask-postgres-app])
+- 📂 **Source Code Repository**: [GitHub Repo](https://github.com/RavishankarDuMCA10/Flask-Postgres-Docker-GCP)
 - 🐋 **Docker Image**: [`ravishankarkushwaha13/flask_live_app:1.0.2`](https://hub.docker.com/repository/docker/ravishankarkushwaha13/flask_live_app)
 - 🌐 **Live API Endpoint**: [`http://34.54.174.188/users`](http://34.54.174.188/users)
 
